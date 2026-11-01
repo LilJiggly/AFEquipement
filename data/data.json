@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Compact Scrubber Machine", "category": "scrubbers", "price": "2895.00", "blurb": "Walk-behind scrubber for daily cleaning of small to medium floors.", "image": "images/products1.jpg" },
+  { "id": 2, "name": "Heavy-Duty Walk-Behind Scrubber", "category": "scrubbers", "price": "3495.00", "blurb": "Built for longer cleaning routes on larger floor surfaces.", "image": "images/products3.jpg" },
+  { "id": 3, "name": "Pro Walk-Behind Scrubber", "category": "scrubbers", "price": "3195.00", "blurb": "Reliable daily scrubbing with an easy-to-read control panel.", "image": "images/products6.jpg" },
+  { "id": 4, "name": "Single-Disc Floor Machine", "category": "scrubbers", "price": "1495.00", "blurb": "Compact single-disc machine for scrubbing and polishing.", "image": "images/products5.jpg" },
+  { "id": 5, "name": "Ride-On Scrubber XL", "category": "ride-on", "price": "9995.00", "blurb": "Maximum capacity for large floor surfaces and long routes.", "image": "images/products2.png" },
+  { "id": 6, "name": "Ride-On Scrubber Pro", "category": "ride-on", "price": "7995.00", "blurb": "Comfortable seated scrubbing for professional daily use.", "image": "images/products4.jpg" },
+  { "id": 7, "name": "Walk-Behind Sweeper", "category": "accessories", "price": "2495.00", "blurb": "Sweeps larger surfaces quickly before or after scrubbing.", "image": "images/products8.webp" },
+  { "id": 8, "name": "Handheld Scrubber", "category": "accessories", "price": "495.00", "blurb": "Lightweight machine for stairs, corners and small areas.", "image": "images/products7.png" }
+]

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Name of Page | Name of Website</title>
+
+		<link rel="stylesheet" href="./css/styles.css" />
+
+		<meta property="og:title" content="Name of Page">
+		<meta name="description" content="Description of this page.">
+		<meta property="og:description" content="Description of this page for embeds.">
+
+		<meta name="color-scheme" content="light dark">
+	</head>
+
+	<body>
+
+		<!-- ===============================
+			 HEADER / NAV
+			 =============================== -->
+		<header class="site-header">
+			<div class="nav-main">
+				<a href="#" class="logo">YourLogo</a>
+
+				<button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<nav class="nav-links" id="navLinks">
+					<a href="#products">Shop</a>
+					<a href="#intro">About</a>
+					<a href="#faq">FAQ</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+
+			<nav class="nav-categories">
+				<a href="#products" data-category="all">All</a>
+				<a href="#products" data-category="scrubbers">Scrubbers</a>
+				<a href="#products" data-category="ride-on">Ride-On</a>
+				<a href="#products" data-category="accessories">Accessories</a>
+			</nav>
+		</header>
+
+		<main>
+
+			<!-- ===============================
+				 HERO / ABOVE THE FOLD
+				 =============================== -->
+			<section class="hero" style="background-image: url('images/cover.webp')">
+				<div class="hero-container">
+					<div class="hero-content">
+						<h1>Your Headline About The Product</h1>
+						<p>A short supporting sentence that explains the value of what you sell.</p>
+						<a href="#products" class="button">Shop Now</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ===============================
+				 INTRO + USPs
+				 =============================== -->
+			<section class="intro" id="intro">
+				<div class="intro-text">
+					<h2>About the shop</h2>
+					<p>A couple of sentences introducing the brand, what it sells, and why customers should care. Keep it short and to the point.</p>
+				</div>
+
+				<ul class="usps">
+					<li>
+						<span class="usp-icon">✓</span>
+						<span>Fast shipping</span>
+					</li>
+					<li>
+						<span class="usp-icon">✓</span>
+						<span>Secure payment</span>
+					</li>
+					<li>
+						<span class="usp-icon">✓</span>
+						<span>Easy returns</span>
+					</li>
+					<li>
+						<span class="usp-icon">✓</span>
+						<span>Support 7 days a week</span>
+					</li>
+				</ul>
+			</section>
+
+			<!-- ===============================
+				 PRODUCTS
+				 =============================== -->
+			<section class="products" id="products">
+				<h2>Products</h2>
+
+				<div class="tabs" id="tabs">
+					<button class="tab-button active" data-category="all">All</button>
+					<button class="tab-button" data-category="scrubbers">Scrubbers</button>
+					<button class="tab-button" data-category="ride-on">Ride-On</button>
+					<button class="tab-button" data-category="accessories">Accessories</button>
+				</div>
+
+				<div class="product-grid" id="productGrid">
+					<!-- product cards are injected here by js/scripts.js -->
+				</div>
+			</section>
+
+			<!-- ===============================
+				 ORDER / QUESTION FORM
+				 =============================== -->
+			<section class="order-form" id="order">
+				<div class="order-form-content">
+					<h2>Order request &amp; questions</h2>
+					<p>Fill in the form below and we'll get back to you as soon as possible.</p>
+
+					<form>
+						<div class="form-row">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+
+						<div class="form-row">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+
+						<div class="form-row">
+							<label for="product">Product</label>
+							<input type="text" id="product" name="product" placeholder="Which product are you interested in?">
+						</div>
+
+						<div class="form-row">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="5"></textarea>
+						</div>
+
+						<button type="submit" class="button">Send request</button>
+					</form>
+				</div>
+			</section>
+
+			<!-- ===============================
+				 FAQ
+				 =============================== -->
+			<section class="faq" id="faq">
+				<div class="faq-content">
+					<h2>Frequently asked questions</h2>
+
+					<details>
+						<summary>What are your shipping times?</summary>
+						<p>Answer about shipping times goes here.</p>
+					</details>
+
+					<details>
+						<summary>Do you accept returns?</summary>
+						<p>Answer about your return policy goes here.</p>
+					</details>
+
+					<details>
+						<summary>Which payment methods do you accept?</summary>
+						<p>Answer about payment methods goes here.</p>
+					</details>
+
+					<details>
+						<summary>How can I track my order?</summary>
+						<p>Answer about order tracking goes here.</p>
+					</details>
+				</div>
+			</section>
+
+			<!-- ===============================
+				 CONTACT
+				 =============================== -->
+			<section class="contact" id="contact">
+				<h2>Contact</h2>
+				<ul>
+					<li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
+					<li>Phone: <a href="tel:+10000000000">+1 000 000 0000</a></li>
+					<li>Address: Street name 1, City, Country</li>
+				</ul>
+			</section>
+
+		</main>
+
+		<!-- ===============================
+			 FOOTER
+			 =============================== -->
+		<footer class="site-footer">
+			<p>&copy; <span id="year"></span> YourLogo. All rights reserved.</p>
+		</footer>
+
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
